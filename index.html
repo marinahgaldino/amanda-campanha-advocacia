@@ -42,22 +42,34 @@
 .plans{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:20px}.plan{padding:20px;}.plan .desc{margin-bottom:14px}.metric strong{font-size:2.1rem}
 .how-groups{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:22px}.how-group li{padding-top:9px;padding-bottom:9px}
 }
+
+/* Ajustes pontuais de compactação e conteúdo */
+#para-quem{padding-top:54px;padding-bottom:54px}
+.audience-inline{display:flex;flex-wrap:wrap;align-items:center;gap:8px 0;margin-top:22px;color:var(--ink);font-size:.94rem}
+.audience-inline span{display:inline-flex;align-items:center;white-space:nowrap}
+.audience-inline span+span:before{content:"·";color:var(--gold);font-weight:700;padding:0 12px}
+@media(max-width:600px){
+#para-quem{padding-top:30px;padding-bottom:32px}
+.audience-inline{font-size:.86rem;line-height:1.55;column-gap:0;row-gap:3px}
+.audience-inline span{white-space:normal}
+.audience-inline span+span:before{padding:0 7px}
+}
 </style>
 </head>
 <body>
 <header class="topbar"><div class="wrap nav">
 <a class="brand" href="#inicio">AMANDA CAMPANHA ADVOCACIA<small>OAB/SP 376.518</small></a>
 <nav class="links" aria-label="Navegação principal"><a href="#quem-conduz">Quem conduz</a><a href="#para-quem">Para quem é</a><a href="#servicos">O que está incluso</a><a href="#pacotes">Pacotes</a><a href="#como-funciona">Como funciona</a></nav>
-<a class="nav-cta" href="https://wa.me/5519989629709"><span class="cta-desktop">Vamos conversar sobre o seu negócio?</span><span class="cta-mobile">WhatsApp</span></a>
+<a class="nav-cta" href="https://wa.me/5519989629709"><span class="cta-desktop">Fale comigo</span><span class="cta-mobile">WhatsApp</span></a>
 </div></header>
 <main>
 <section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="eyebrow">AMANDA CAMPANHA ADVOCACIA</div><h1>Assessoria Jurídica Preventiva</h1><p class="hero-sub">Protegendo sua pequena empresa desde o início</p><div class="rule"></div><p class="eyebrow">OAB/SP 376.518</p></div><div class="hero-art"><div class="monogram">AC</div></div></div></section>
 <section class="section intro" id="quem-conduz"><div class="wrap intro-layout">
 <div class="intro-heading"><div class="eyebrow">QUEM CONDUZ</div><h2 class="section-title">Amanda Campanha</h2></div>
 <div class="portrait"><img src="Imagem%20do%20ChatGPT%208%20de%20nov.%20de%202026,%2020_15_19.jpg" alt="Amanda Campanha"></div>
-<div class="intro-copy"><p class="bio">Advogada com mais de dez anos de atuação nas áreas cível, consumerista, empresarial e contratual. Formada em Direito e Língua Portuguesa, também atua em liderança comercial e operações desde 2020.</p><div class="credentials"><div class="credential"><strong>Advogada</strong><span>pós-graduada em Direito Processual Civil</span></div><div class="credential"><strong>Escritora</strong><span>Autora de três livros e Consultora de Escrita</span></div><div class="credential"><strong>Gestora</strong><span>comercial e operacional</span></div></div></div>
+<div class="intro-copy"><p class="bio">Advogada com mais de dez anos de atuação nas áreas cível, consumerista, empresarial e contratual. Formada em Direito e Língua Portuguesa.</p><div class="credentials"><div class="credential"><strong>Advogada</strong><span>pós-graduada em Direito Processual Civil</span></div><div class="credential"><strong>Gestora</strong><span>comercial e operacional</span></div></div></div>
 </div></section>
-<section class="section" id="para-quem"><div class="wrap"><div class="eyebrow">PARA QUEM É</div><h2 class="section-title">Para mulheres que empreendem</h2><div class="audience-grid"><article class="audience"><h3>Pequenas empresárias</h3></article><article class="audience"><h3>Prestadoras de serviço</h3></article><article class="audience"><h3>Lojas e vendas on-line</h3></article><article class="audience"><h3>Escritoras e criadoras</h3></article></div></div></section>
+<section class="section" id="para-quem"><div class="wrap"><div class="eyebrow">PARA QUEM É</div><h2 class="section-title">Para mulheres que empreendem</h2><div class="audience-inline"><span>Pequenas empresárias</span><span>Prestadoras de serviço</span><span>Lojas e vendas on-line</span><span>Escritoras e criadoras</span></div></div></section>
 
 <section class="section services" id="servicos"><div class="wrap"><div class="eyebrow">O QUE ESTÁ INCLUSO</div><h2 class="section-title">Contratos e direito do consumidor</h2><div class="service-grid"><article class="service"><h3>Contratos</h3><ul><li>NDA, prestação de serviços e fornecedores</li><li>Prestadores, freelancers e termos de uso</li><li>Políticas de troca e contratos editoriais</li><li>Direitos autorais</li></ul></article><article class="service"><h3>Direito do consumidor</h3><ul><li>Trocas, devoluções e garantias</li><li>Reclame Aqui e Procon</li><li>Informações em ofertas e no site</li><li>Relação com clientes</li></ul></article></div><p class="note">Pacotes voltados a contratos base de pequenas empresas. Outras áreas são avaliadas à parte.</p><div class="package-block" id="pacotes"><div class="eyebrow">PACOTES MENSAIS</div><h2 class="section-title">Planos de acompanhamento</h2>
 <div class="plans">
@@ -70,7 +82,7 @@
 </div></section>
 <section class="section how" id="como-funciona"><div class="wrap"><div class="eyebrow">COMO FUNCIONA</div><h2 class="section-title">Como funciona o acompanhamento</h2>
 <div class="how-groups">
-<div class="how-group"><h3>O QUE ESTÁ INCLUSO</h3><ul><li>Contratos novos ou revisados</li><li>Consultas agendadas com 48h de antecedência</li><li>Serviços extras com valor avulso</li></ul></div>
+<div class="how-group"><h3>ATENDIMENTO</h3><ul><li>Consultas agendadas com 48h de antecedência</li><li>Serviços extras com valor avulso</li></ul></div>
 <div class="how-group"><h3>PRAZOS</h3><ul><li>Entrega em até 5 dias úteis, após o envio de todas as informações</li><li>Plano Parceria: resposta em até 48h úteis</li><li>O saldo mensal não acumula</li></ul></div>
 <div class="how-group"><h3>CONTRATO</h3><ul><li>Assinado antes do início, com período inicial de 6 meses</li><li>Depois de 6 meses: prazo indeterminado, com aviso prévio de 30 dias</li><li>Reajuste anual</li></ul></div>
 </div></div></section>
