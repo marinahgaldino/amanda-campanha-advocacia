@@ -54,6 +54,44 @@
 .audience-inline span{white-space:normal}
 .audience-inline span+span:before{padding:0 7px}
 }
+
+/* Revisão de espaçamento — computador e tablet */
+.intro-layout{grid-template-rows:1fr 1fr}
+.intro-heading{align-self:end}
+.intro-heading .section-title{margin-bottom:14px}
+.intro-copy{align-self:start}
+#servicos{padding-bottom:64px}
+.package-block{margin-top:56px;padding-top:44px}
+#como-funciona{padding-top:0;padding-bottom:88px}
+#como-funciona .wrap{border-top:1px solid #dfe3e6;padding-top:48px}
+.audience-inline{display:flex;flex-wrap:wrap;gap:10px 34px}
+.audience-inline span{position:relative;padding-left:16px}
+.audience-inline span:before,.audience-inline span+span:before{content:"";padding:0;position:absolute;left:0;top:50%;width:7px;height:2px;background:var(--gold)}
+.contact-details{display:grid;grid-template-columns:repeat(3,max-content);gap:40px}
+@media(max-width:950px) and (min-width:601px){
+ .service-grid{grid-template-columns:1fr 1fr;gap:16px}
+ .service{padding:26px 24px}
+ .plans{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ .plan{padding:20px 18px}
+ .plan-metrics{gap:8px}
+ .metric strong{font-size:2rem}
+ .contact-details{grid-template-columns:repeat(3,max-content);gap:28px}
+ .contact-item{min-width:0}
+ .contact-item a{font-size:.88rem}
+ .intro-layout{grid-template-rows:auto 1fr}
+ .intro-heading{align-self:start}
+ .intro-layout{grid-template-columns:.8fr 1.2fr;column-gap:36px}
+}
+@media(max-width:600px){
+ .intro-layout{grid-template-rows:none}
+ .intro-heading,.intro-copy{align-self:auto}
+ #servicos{padding-bottom:48px}
+ .package-block{margin-top:40px;padding-top:32px}
+ #como-funciona{padding-bottom:56px}
+ #como-funciona .wrap{padding-top:36px}
+ .audience-inline{flex-direction:column;gap:8px}
+ .contact-details{grid-template-columns:minmax(0,1fr);gap:20px}
+}
 </style>
 </head>
 <body>
